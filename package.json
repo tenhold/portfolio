@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Build UI that scales",
   "scripts": {
+    "start": "nodemon server/index.js",
+    "dev": "webpack --mode development --watch",
     "build": "webpack --config webpack.config.js"
   },
   "keywords": [
@@ -14,12 +16,14 @@
   "license": "ISC",
   "dependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.0.5",
     "@types/webpack": "4.1.4",
+    "html-webpack-plugin": "^4.5.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.4.3",
     "webpack": "^4.41.5",
