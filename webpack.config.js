@@ -8,7 +8,7 @@ module.exports = {
   },
   target: 'web',
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx', '.js', '.css']
   },
   module: {
     rules: [
@@ -16,7 +16,11 @@ module.exports = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: '/node_modules/'
-      }
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   output: {
