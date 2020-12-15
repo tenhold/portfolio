@@ -20,8 +20,12 @@ nav {
   color: rgb(228, 228, 228);
 }
 
-a:visited {
+.nav-Links a:visited {
   color:rgb(228, 228, 228);
+}
+
+.nav-Links a {
+  text-decoration: none;
 }
 
 .container {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Typography } from '@material-ui/core';
 import '../App.css';
 
 const Nav = () => {
@@ -8,10 +9,10 @@ const Nav = () => {
       <nav>
         <ul className='nav-Links'>
           <Link to='/about'>
-            <li>About</li>
+            <Typography variant='h6'>About</Typography>
           </Link>
           <Link to='/projects'>
-            <li>Projects</li>
+            <Typography variant='h6'>Projects</Typography>
           </Link>
         </ul>
       </nav>

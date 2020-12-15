@@ -26,6 +26,7 @@ const About = () => {
         <Grid item xs={12}>
           <Typography variant='h1'>About</Typography>
         </Grid>
+        <Grid item xs={3}></Grid>
         <Grid item xs={6} className={paper}>
           <Typography variant='body1'>
             Software developer with experience in JavaScript. Accustomed to
