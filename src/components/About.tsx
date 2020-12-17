@@ -1,6 +1,7 @@
 import React from 'react';
+import jon from '../../images/jon.jpg';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, CircularProgress } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -10,15 +11,18 @@ const useStyles = makeStyles((theme: Theme) =>
     container: {
       alignItems: 'top',
     },
-    paper: {
+    text: {
       textAlign: 'left',
       // color: theme.palette.text.secondary,
+    },
+    image: {
+      alignItems: 'center',
     },
   })
 );
 
 const About = () => {
-  const { root, container, paper } = useStyles();
+  const { root, container, text, image } = useStyles();
 
   return (
     <div className={root}>
@@ -26,8 +30,7 @@ const About = () => {
         <Grid item xs={12}>
           <Typography variant='h1'>About</Typography>
         </Grid>
-        <Grid item xs={3}></Grid>
-        <Grid item xs={6} className={paper}>
+        <Grid item xs={6} className={text}>
           <Typography variant='body1'>
             Software developer with experience in JavaScript. Accustomed to
             working in tight-knit crews where communication is key. As a
@@ -35,13 +38,12 @@ const About = () => {
             includes React, Nodejs, Express, Postgres, and MongoDB.
           </Typography>
         </Grid>
-        <Grid item xs={3} className={paper}>
-          <Typography variant='body1'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus,
-            soluta! Blanditiis autem quae debitis. Iusto magni a voluptate
-            distinctio pariatur, praesentium sint eos consequatur temporibus
-            mollitia ex! Nemo, facere quod?
-          </Typography>
+        <Grid item xs={3} className={image}>
+          <img
+            src={jon}
+            style={{ maxHeight: '10%', borderRadius: '50%' }}
+            alt='Jon'
+          />
         </Grid>
       </Grid>
     </div>
