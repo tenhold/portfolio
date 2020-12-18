@@ -14,8 +14,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(DIST_DIR));
 
-app.get('*', (req, res) => {
-  res.sendFile(HTML_FILE)
+app.get('*', (_req: any, res: { sendFile: (arg0: any) => void }) => {
+  res.sendFile(HTML_FILE);
 });
 
 http.listen(port, () => {

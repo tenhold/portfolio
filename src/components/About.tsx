@@ -1,7 +1,7 @@
 import React from 'react';
 import jon from '../../images/jon.jpg';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import { Grid, Typography, CircularProgress } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

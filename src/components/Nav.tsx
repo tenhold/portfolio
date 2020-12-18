@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Typography, Grid } from '@material-ui/core';
+import { Typography, Grid, Button, IconButton } from '@material-ui/core';
+import HomeIcon from '@material-ui/icons/Home';
 import '../App.css';
 
 const Nav = () => {
