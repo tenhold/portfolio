@@ -21,6 +21,9 @@ const Nav = () => {
           <Link to='/projects'>
             <Typography variant='h6'>Projects</Typography>
           </Link>
+          <Link to='/carousel'>
+            <Typography variant='h6'>Carousel</Typography>
+          </Link>
         </ul>
       </nav>
     </div>
