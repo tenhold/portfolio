@@ -3,8 +3,7 @@ name: Node.js Package
 
 on:
   push:
-    branches: [master]
-    branches: [feat/projects]
+    branches: [master, feat/projects]
   pull_request:
     branches: [master]
 
