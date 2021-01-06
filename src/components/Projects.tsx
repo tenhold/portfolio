@@ -3,9 +3,7 @@ import Project from './Project';
 import { projects } from '../../data/projectData';
 import { Grid } from '@material-ui/core';
 
-console.log(projects);
-
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <div>
       <h1>Projects</h1>

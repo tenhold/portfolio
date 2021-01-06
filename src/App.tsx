@@ -7,7 +7,7 @@ import Example from './components/Carousel';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Router>
       <div className='app'>
