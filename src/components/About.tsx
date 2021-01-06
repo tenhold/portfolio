@@ -1,15 +1,14 @@
 import React from 'react';
 import jon from '../../images/jon.jpg';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      flexGrow: 1,
-    },
     container: {
+      flexGrow: 1,
       alignItems: 'top',
+      padding: '2em 0 0 0',
     },
     text: {
       textAlign: 'left',
@@ -17,32 +16,30 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     image: {
       alignItems: 'center',
+      maxHeight: '200px',
+      borderRadius: '50%',
+      margin: '0px',
     },
   })
 );
 
 const About = () => {
-  const { root, container, text, image } = useStyles();
+  const { container, text, image } = useStyles();
 
   return (
-    <div className={root}>
-      <Grid container className={container} justify='space-evenly'>
-        <Grid item xs={12}>
-          <Typography variant='h1'>About</Typography>
-        </Grid>
-        <Grid item xs={6} className={text}>
-          <Typography variant='body1'>
-            Software developer with experience in JavaScript. Accustomed to
-            working in tight-knit crews where communication is key. As a
-            photographer, I'm always looking at the small details. Experience
-            includes React, Nodejs, Express, Postgres, and MongoDB.
-          </Typography>
-        </Grid>
-        <Grid item xs={3} className={image}>
-          <img className='jonImg' src={jon} alt='Jon' />
-        </Grid>
+    <Grid container className={container} justify='space-evenly'>
+      <Grid item xs={12} className={image}>
+        <img className={image} src={jon} alt='Jon' />
       </Grid>
-    </div>
+      <Grid item xs={12} className={text}>
+        <p>
+          Software developer with experience in JavaScript. Accustomed to
+          working in tight-knit crews where communication is key. As a
+          photographer, I'm always looking at the small details. Experience
+          includes React, Nodejs, Express, Postgres, and MongoDB.
+        </p>
+      </Grid>
+    </Grid>
   );
 };
 
