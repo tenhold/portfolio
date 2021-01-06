@@ -10,6 +10,8 @@ body {
   text-align: center;
 }
 
+/* nav page */
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -19,11 +21,6 @@ nav {
   color:rgb(228, 228, 228);
 }
 
-.home-Link {
-  color: #D3869B;
-  text-decoration: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -31,6 +28,16 @@ a {
 ul {
   list-style: none;
 }
+
+div {
+  color:rgb(228, 228, 228);
+}
+
+.home-Link {
+  color: #D3869B;
+  text-decoration: none;
+}
+
 .nav-Links {
   width: 50%;
   display: flex;
@@ -47,10 +54,20 @@ ul {
   text-decoration: none;
 }
 
+
+/*  About page */
+
 .container {
   display: flex;
 }
 
-div {
-  color:rgb(228, 228, 228);
+.jonImg {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .jonImg {
+    max-height: 10%; 
+    border-radius: 50%     
+  }
 }

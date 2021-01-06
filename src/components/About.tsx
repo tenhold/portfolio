@@ -39,11 +39,7 @@ const About = () => {
           </Typography>
         </Grid>
         <Grid item xs={3} className={image}>
-          <img
-            src={jon}
-            style={{ maxHeight: '10%', borderRadius: '50%' }}
-            alt='Jon'
-          />
+          <img className='jonImg' src={jon} alt='Jon' />
         </Grid>
       </Grid>
     </div>
