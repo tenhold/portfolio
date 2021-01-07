@@ -6,15 +6,18 @@
 body {
   background: #121212;
 }
+
 .app {
   text-align: center;
+}
+
+div {
+  color:rgb(228, 228, 228);
 }
 
 /* nav page */
 
 nav {
-  /* border: 2px solid orangered; */
-
   display: flex;
   justify-content: space-between;
   padding: 0 2em;
@@ -24,15 +27,15 @@ nav {
   color:rgb(228, 228, 228);
 }
 
-a {
-  text-decoration: none;
-}
-
-.nav-Links a:visited {
+.nav-links a:visited {
   color:rgb(228, 228, 228);
 }
 
-.nav-Links a {
+.nav-links a {
+  text-decoration: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -41,28 +44,29 @@ ul {
   padding: 0;
 }
 
-div {
-  color:rgb(228, 228, 228);
-}
-
-.home-Link {
+.home-link {
   color: #D3869B;
-  width: 25%;
   text-decoration: none;
 }
 
-.nav-Links {
+.nav-links {
   /* border: 5px solid orangered; */
   display: flex;
 }
 
-.nav-Links li {
+.nav-links li {
   padding: 10px;
+}
+
+.hamburger {
+  fill: #D3869B; 
+  display: none;
 }
 
 .social {
   fill: #D3869B;
 }
+
 
 /*  About page */
 
@@ -70,13 +74,11 @@ div {
   display: flex;
 }
 
-/* .jonImg {
-  display: none;
-} */
-
-@media only screen and (min-width: 800px) {
-  .jonImg {
-    max-height: 10%; 
-    border-radius: 50%     
+@media only screen and (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+  .social, .nav-links {
+    display: none;
   }
 }

@@ -4,7 +4,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Home from './components/Home';
 import Example from './components/Carousel';
-import './App.css';
+import './style/App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App: React.FC = () => {

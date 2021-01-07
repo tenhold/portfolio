@@ -2,15 +2,19 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Linkedin from '../svgs/Linkedin';
 import Github from '../svgs/Github';
-import '../App.css';
+import Hamburger from '../svgs/Hamburger';
 
 const Nav: React.FC = () => {
+  const handleClick = () => {
+    console.log('hello from click');
+  };
+
   return (
     <nav>
-      <NavLink to='/' exact className='home-Link'>
+      <NavLink to='/' exact className='home-link'>
         <h1>Jon Tenholder</h1>
       </NavLink>
-      <ul className='nav-Links'>
+      <ul className='nav-links'>
         <li>
           <NavLink to='/about'>
             <h3>About</h3>
@@ -32,6 +36,7 @@ const Nav: React.FC = () => {
           </a>
         </li>
       </ul>
+      <Hamburger className='hamburger' onClick={handleClick} />
     </nav>
   );
 };
