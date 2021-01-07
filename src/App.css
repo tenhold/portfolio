@@ -41,10 +41,6 @@ ul {
   padding: 0;
 }
 
-li {
-  padding: 0 2em;
-}
-
 div {
   color:rgb(228, 228, 228);
 }
@@ -57,13 +53,16 @@ div {
 
 .nav-Links {
   /* border: 5px solid orangered; */
-
   display: flex;
-  width: 50%;
-  justify-content: space-around;
 }
 
+.nav-Links li {
+  padding: 10px;
+}
 
+.social {
+  fill: #D3869B;
+}
 
 /*  About page */
 

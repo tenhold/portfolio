@@ -1,12 +1,6 @@
 import React from 'react';
 import jon from '../../images/jon.jpg';
-import {
-  makeStyles,
-  createStyles,
-  Theme,
-  useTheme,
-} from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -31,8 +25,6 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const About = () => {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up('sm'));
   const { container, text, image } = useStyles();
 
   return (
@@ -40,25 +32,14 @@ const About = () => {
       <Grid item xs={12} className={image}>
         <img className={image} src={jon} alt='Jon' />
       </Grid>
-      {matches ? (
-        <Grid item xs={6} className={text}>
-          <p>
-            Software developer with experience in JavaScript. Accustomed to
-            working in tight-knit crews where communication is key. As a
-            photographer, I'm always looking at the small details. Experience
-            includes React, Nodejs, Express, Postgres, and MongoDB.
-          </p>
-        </Grid>
-      ) : (
-        <Grid item xs={12} className={text}>
-          <p>
-            Software developer with experience in JavaScript. Accustomed to
-            working in tight-knit crews where communication is key. As a
-            photographer, I'm always looking at the small details. Experience
-            includes React, Nodejs, Express, Postgres, and MongoDB.
-          </p>
-        </Grid>
-      )}
+      <Grid item xs={12} className={text}>
+        <p>
+          Software developer with experience in JavaScript. Accustomed to
+          working in tight-knit crews where communication is key. As a
+          photographer, I'm always looking at the small details. Experience
+          includes React, Nodejs, Express, Postgres, and MongoDB.
+        </p>
+      </Grid>
     </Grid>
   );
 };
