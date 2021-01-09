@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  padding: 10em 2em;
+}
+
+.me {
+  flex: 1;
+  border: 2px solid orangered;
+  padding: 3em 0;
+}
+
+.about {
+  display: inherit;
+  align-items: flex-end;
+  text-align: left;
+
+  padding: 0 2em;
+}
+
+.feat-projects {
+  display: flex;
+  bottom: 5em;
+  overflow: scroll;
+}
+
+.feat-projects::-webkit-scrollbar {
+  display: none;
+}
+
+.feat-project {
+  border: 5px solid orangered;
+  min-width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    display: block;
+    padding: 3em 2em;
+  }
+
+  .about {
+    padding-top: 1em;
+  }
+}

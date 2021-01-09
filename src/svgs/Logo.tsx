@@ -15,7 +15,7 @@ const Logo: React.FC<Props> = ({ className, width, height }) => (
     height={height}
     viewBox='0 150 1000 700'>
     <image
-      id='Color_Fill_2_copy'
+      id='color-fill'
       data-name='Color Fill 2 copy'
       x='11'
       y='172'
