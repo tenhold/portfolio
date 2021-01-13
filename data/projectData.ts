@@ -15,11 +15,13 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
     images: prostImg,
+    repo: 'https://github.com/tenhold/Prost',
   },
   {
     name: 'Trailr',
     description: `Lorem ipsum trair sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,`,
     images: trailrImg2,
+    repo: 'https://github.com/tenhold/Prost',
   },
 ];
 

@@ -4,9 +4,10 @@ interface Props {
   name: string;
   description: string;
   images: string | undefined;
+  repo: string;
 }
 
-const Project: React.FC<Props> = ({ name, description, images }) => (
+const Project: React.FC<Props> = ({ name, description, images, repo }) => (
   <li>
     <h2>{name}</h2>
     <div className='proj-body'>
@@ -31,6 +32,7 @@ const Project: React.FC<Props> = ({ name, description, images }) => (
       </p>
       <img className='proj-img' src={images} alt='missing' />
     </div>
+    <button onClick={() => window.open(repo)}>repo</button>
   </li>
 );
 

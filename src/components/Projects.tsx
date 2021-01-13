@@ -8,8 +8,13 @@ const Projects: React.FC = () => {
     <div className='main'>
       <h1>Projects</h1>
       <ul>
-        {projects.map(({ name, description, images }) => (
-          <Project name={name} description={description} images={images} />
+        {projects.map(({ name, description, images, repo }) => (
+          <Project
+            name={name}
+            description={description}
+            images={images}
+            repo={repo}
+          />
         ))}
       </ul>
     </div>
