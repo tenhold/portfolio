@@ -1,6 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { prostImgs } from '../../data/projectData';
 
-const nums: number[] = [1, 2, 3, 4, 5, 6];
+console.log(prostImgs);
+
+// const nums: number[] = [1, 2, 3, 4, 5, 6];
 
 const Home: React.FC = () => {
   return (
@@ -17,8 +21,17 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='feat-projects'>
-        {nums.map((num: number, i: number) => (
-          <div className='feat-project'>{`hello I'm number ${num}`}</div>
+        {/* {nums.map((num: number, i: number) => (
+          <div
+            key={i}
+            className='feat-project'>{`hello I'm number ${num}`}</div>
+        ))} */}
+        {prostImgs.map(({ id, src }) => (
+          <div className='feat-project'>
+            <NavLink to='/projects'>
+              <img className='prost' src={src} alt={`prost${id}`} />
+            </NavLink>
+          </div>
         ))}
       </div>
     </div>

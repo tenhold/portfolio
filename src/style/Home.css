@@ -19,6 +19,7 @@
 
 .feat-projects {
   display: flex;
+  padding: 1em;
   bottom: 5em;
   overflow: scroll;
 }
@@ -28,11 +29,22 @@
 }
 
 .feat-project {
-  border: 5px solid orangered;
   min-width: 200px;
+  max-width: 200px;
   height: 300px;
-  border-radius: 5px;
+  max-height: 300px;
   margin: 15px;
+}
+
+.feat-project:hover {
+  opacity: 50%;
+}
+
+.prost {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 800px) {
