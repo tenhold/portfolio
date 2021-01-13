@@ -2,6 +2,7 @@ import prostImg from '../images/prost.png';
 import prostImg0 from '../images/projects/Prost/IMG_3150.png';
 import prostImg1 from '../images/projects/Prost/IMG_3151.png';
 import prostImg2 from '../images/projects/Prost/IMG_3152.png';
+import trailrImg2 from '../images/projects/Trailr/trailr-2.png';
 
 interface image {
   id: number;
@@ -18,7 +19,7 @@ export const projects = [
   {
     name: 'Trailr',
     description: `Lorem ipsum trair sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,`,
-    images: null,
+    images: trailrImg2,
   },
 ];
 

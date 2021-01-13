@@ -20,10 +20,22 @@ div {
   color:rgb(228, 228, 228);
 }
 
+.main {
+  padding: 10vh 20px 10vh 20px;
+  /* padding-top: 10vh;
+  padding-bottom: 10vh; */
+}
+
+h1 {
+  padding: 30px;
+}
+
 /* nav page */
 
 nav {
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   height: 10vh;

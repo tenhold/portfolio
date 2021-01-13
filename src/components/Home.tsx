@@ -8,7 +8,7 @@ console.log(prostImgs);
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <div className='main'>
       <div className='container'>
         <div className='me'>
           <h1>Tempor ullamco</h1>

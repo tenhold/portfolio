@@ -5,7 +5,7 @@ import { Grid } from '@material-ui/core';
 
 const Projects: React.FC = () => {
   return (
-    <div>
+    <div className='main'>
       <h1>Projects</h1>
       <ul>
         {projects.map(({ name, description, images }) => (

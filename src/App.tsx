@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Example from './components/Carousel';
 import './style/App.css';
 import './style/Home.css';
+import './style/Projects.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App: React.FC = () => {

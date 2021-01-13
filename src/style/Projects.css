@@ -1,0 +1,28 @@
+.proj-body {
+  display: flex;
+}
+
+h2 {
+  text-align: left;
+  padding-bottom: 1em;
+  color: #D3869B;
+}
+
+.proj-body img {
+  width: 25%;
+  height: auto; 
+}
+
+.proj-body p {
+  vertical-align: bottom;
+}
+
+@media only screen and (max-width: 800px) {
+  h2 {
+    text-align: center;
+  }
+  .proj-body {
+    display: block;
+    text-align: left;
+  }
+}
