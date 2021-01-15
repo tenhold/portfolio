@@ -1,15 +1,55 @@
-.proj-body {
-  display: flex;
-}
-
 h2 {
   text-align: left;
   padding-bottom: 1em;
   color: #D3869B;
 }
 
+.container {
+  display: flex;
+  flex: row;
+  align-items: stretch;
+  margin: 0 0 50px 0;
+  padding: 2em;
+}
+
+.container p {
+  line-height: 1.5;
+  vertical-align: bottom;
+}
+
+.container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container li {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #D3869B;
+}
+
+.column {
+  display: block
+}
+
+.column {
+  border: solid 2px red;
+}
+
+.images {
+  width: 100%;
+}
+
+.images img {
+  width: inherit;
+  height: auto; 
+}
+
+
+/* 
 .proj-body img {
-  width: 25%;
+  width: 50%;
   height: auto; 
 }
 
@@ -17,12 +57,35 @@ h2 {
   vertical-align: bottom;
 }
 
+.proj-body div {
+  display: block;
+}
+
+.proj-body ul {
+  display: flex;
+}
+
+.proj-body li {
+  margin: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  background: #D3869B;
+}
+
+.project button {
+  float: right;
+} */
+
 @media only screen and (max-width: 800px) {
   h2 {
     text-align: center;
   }
-  .proj-body {
+  .container {
     display: block;
     text-align: left;
+  }
+
+  img {
+    width: 100%;
   }
 }

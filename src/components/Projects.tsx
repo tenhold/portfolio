@@ -7,16 +7,17 @@ const Projects: React.FC = () => {
   return (
     <div className='main'>
       <h1>Projects</h1>
-      <ul>
-        {projects.map(({ name, description, images, repo }) => (
+      <div>
+        {projects.map(({ name, description, technologies, images, repo }) => (
           <Project
             name={name}
             description={description}
+            technologies={technologies}
             images={images}
             repo={repo}
           />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

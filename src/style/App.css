@@ -10,10 +10,7 @@
 
 body {
   background: #121212;
-}
-
-.app {
-  text-align: center;
+  font-size: 120%;
 }
 
 div {
