@@ -80,6 +80,9 @@ ul {
   fill: #D3869B;
 }
 
+.social:hover {
+  fill: #7dd4b9
+}
 /*  About page */
 
 .container {

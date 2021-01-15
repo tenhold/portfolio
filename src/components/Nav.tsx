@@ -29,12 +29,19 @@ const Nav: React.FC = () => {
           </NavLink>
         </li>
         <li>
-          <a href='https://www.linkedin.com/in/jon-tenholder-583128191/'>
+          {/* {window.open('https://www.linkedin.com/in/jon-tenholder-583128191/')} */}
+          <a
+            href='https://www.linkedin.com/in/jon-tenholder-583128191/'
+            target='_blank'
+            rel='noreferrer noopener'>
             <Linkedin className='social' />
           </a>
         </li>
         <li>
-          <a href='https://github.com/tenhold'>
+          <a
+            href='https://github.com/tenhold'
+            target='_blank'
+            rel='noreferrer noopener'>
             <Github className='social' />
           </a>
         </li>
