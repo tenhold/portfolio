@@ -34,6 +34,7 @@ h4 {
 /* nav page */
 
 nav {
+  padding-top: 0.5em;
   display: flex;
   position: fixed;
   width: 100%;
@@ -111,12 +112,17 @@ ul {
 @media only screen and (max-width: 800px) {
   .nav-links {
     overflow: hidden;
-    background-color: #8842d5;
+    background-color: #D3869B;
     position: fixed;
     bottom: 0;
     height: 8vh;
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
+  }
+
+  nav a:visited {
+    color: #121212;
   }
 
   .hamburger {

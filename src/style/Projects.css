@@ -34,7 +34,8 @@ h2 {
 }
 
 .column {
-  display: block
+  display: block;
+  width: 100%;
 }
 
 .images {

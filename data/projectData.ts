@@ -36,7 +36,8 @@ export const projects: projectsOS[] = [
   },
   {
     name: 'Trailr',
-    description: `Lorem ipsum trair sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,`,
+    description: `Trailr provides users access to hiking trails in their area, as well as search-by-location functionality. Trails load automatically as a user traverses to new areas within Google Maps.
+    Users can save their favorite trails to plan trips, and rate the difficulty and likeability of each trail that they encounter. Users can also upload geo-tagged photos, sharing interesting things they find along the trail route with other users. Users can comment on their own photos and photos that others upload, and they can edit their own comments.`,
     images: trailrMockMac,
     technologies: ['react', 'react-router', 'node.js', 'goolge maps API'],
     repo: 'https://github.com/tenhold/trailr',

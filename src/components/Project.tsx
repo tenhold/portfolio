@@ -19,7 +19,7 @@ const Project: React.FC<Props> = ({
     <div className='column'>
       <h2>{name}</h2>
       <p>{description}</p>
-      <h4>Technologies used:</h4>
+      <h4>Technologies used</h4>
       <ul>
         {technologies.map((technology) => (
           <li>{technology}</li>
