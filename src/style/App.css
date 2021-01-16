@@ -18,13 +18,17 @@ div {
 }
 
 .main {
-  padding: 10vh 20px 10vh 20px;
+  padding: 12vh 20px 10vh 20px;
   /* padding-top: 10vh;
   padding-bottom: 10vh; */
 }
 
 h1 {
   padding: 30px;
+}
+
+h4 {
+  font-size: 1em;
 }
 
 /* nav page */
@@ -46,6 +50,10 @@ nav {
 
 .nav-links a {
   text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #D3869B; 
 }
 
 a {
@@ -81,8 +89,19 @@ ul {
 }
 
 .social:hover {
-  fill: #7dd4b9
+  fill: #7dd4b9;
+} 
+
+
+.logo {
+  transition: 0.3s;
 }
+
+.logo:hover {
+  width: 125%;
+  height: auto;
+}
+
 /*  About page */
 
 .container {

@@ -19,6 +19,7 @@ const Project: React.FC<Props> = ({
     <div className='column'>
       <h2>{name}</h2>
       <p>{description}</p>
+      <h4>Technologies used:</h4>
       <ul>
         {technologies.map((technology) => (
           <li>{technology}</li>
@@ -27,7 +28,7 @@ const Project: React.FC<Props> = ({
     </div>
     <div className='images'>
       <img src={images} alt='missing' />
-      <button onClick={() => window.open(repo)}>repo</button>
+      <button onClick={() => window.open(repo)}>{`</repo>`}</button>
     </div>
   </div>
 );

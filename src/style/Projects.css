@@ -12,38 +12,56 @@ h2 {
   padding: 2em;
 }
 
+.container h4 {
+  padding-top: 1em;
+}
+
 .container p {
   line-height: 1.5;
   vertical-align: bottom;
 }
 
 .container ul {
+  padding: 1em 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .container li {
-  margin: 10px;
-  padding: 10px;
+  padding: 0 4px 4px 4px;
   border-radius: 10px;
-  background: #D3869B;
+  color: #7dd4b9;
 }
 
 .column {
   display: block
 }
 
-.column {
-  border: solid 2px red;
-}
-
 .images {
   width: 100%;
+  text-align: center;
 }
 
 .images img {
   width: inherit;
   height: auto; 
+}
+
+.images button {
+  cursor: pointer;
+  padding: 10px 24px;
+  margin-top: 15px;
+  border: solid 5px #D3869B;
+  background-color: inherit;
+  font: inherit;
+  color: inherit;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #D3869B;
+
 }
 
 
@@ -79,8 +97,10 @@ h2 {
 @media only screen and (max-width: 800px) {
   h2 {
     text-align: center;
+    padding-bottom: 0.4em;
   }
   .container {
+    padding: 0px;
     display: block;
     text-align: left;
   }
