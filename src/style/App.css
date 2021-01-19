@@ -18,6 +18,8 @@ div {
 }
 
 .main {
+  display: flex;
+  justify-content: center;
   padding: 12vh 20px 10vh 20px;
   /* padding-top: 10vh;
   padding-bottom: 10vh; */
