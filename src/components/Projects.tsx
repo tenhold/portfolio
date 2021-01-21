@@ -5,7 +5,6 @@ import { projects } from '../../data/projectData';
 const Projects: React.FC = () => {
   return (
     <div className='main'>
-      {/* <h1>Projects</h1> */}
       <div>
         {projects.map(({ name, description, technologies, images, repo }) => (
           <Project

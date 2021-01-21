@@ -12,11 +12,8 @@ h2 {
   padding: 2em;
 }
 
-.container h4 {
-  padding-top: 1em;
-}
-
 .container p {
+  padding-top: 1em;
   line-height: 1.5;
   vertical-align: bottom;
 }
@@ -36,10 +33,12 @@ h2 {
 .column {
   display: block;
   width: 100%;
+  padding-right: 15px;
 }
- 
+
 .images {
   text-align: center;
+  max-width: 800px;
 }
 
 .carousel {
@@ -96,37 +95,7 @@ button:hover {
   /* bottom: 220px;  */
 }
 
-
-/* 
-.proj-body img {
-  width: 50%;
-  height: auto; 
-}
-
-.proj-body p {
-  vertical-align: bottom;
-}
-
-.proj-body div {
-  display: block;
-}
-
-.proj-body ul {
-  display: flex;
-}
-
-.proj-body li {
-  margin: 1em;
-  padding: 10px;
-  border-radius: 10px;
-  background: #D3869B;
-}
-
-.project button {
-  float: right;
-} */
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   h2 {
     text-align: center;
     padding-bottom: 0.4em;

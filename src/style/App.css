@@ -36,6 +36,7 @@ h4 {
 /* nav page */
 
 nav {
+  z-index: 2;
   padding-top: 0.5em;
   display: flex;
   position: fixed;
