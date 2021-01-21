@@ -1,37 +1,27 @@
-import React from 'react';
-import Carousel from 'react-material-ui-carousel';
-import { Paper, Button } from '@material-ui/core';
+import React, { PropsWithChildren, useState } from 'react';
+import NextBtn from '../svgs/NextBtn';
+import PrevBtn from '../svgs/PrevBtn';
 
-function Example(props: any) {
-  var items = [
-    {
-      name: 'Random Name #1',
-      description: 'Probably the most random thing you have ever seen!',
-    },
-    {
-      name: 'Random Name #2',
-      description: 'Hello World!',
-    },
-  ];
-
-  return (
-    <Carousel>
-      {items.map((item, i) => (
-        <Item key={i} item={item} />
-      ))}
-    </Carousel>
-  );
+interface Props {
+  images: string[];
 }
 
-function Item(props: any) {
+const Carousel: Function = ({
+  images,
+}: PropsWithChildren<Props>): JSX.Element => {
+  const [curImg, setCurImg] = useState(0);
+
+  const next = () => setCurImg(curImg === images.length - 1 ? 0 : curImg + 1);
+
+  const prev = () => setCurImg(curImg === 0 ? images.length - 1 : curImg - 1);
+
   return (
-    <Paper>
-      <h2>{props.item.name}</h2>
-      <p>{props.item.description}</p>
-
-      <Button className='CheckButton'>Check it out!</Button>
-    </Paper>
+    <div className='carousel'>
+      <PrevBtn className='prev' id='arrows' onClick={prev} />
+      <NextBtn className='next' id='arrows' onClick={next} />
+      <img src={images[curImg]} alt={`${images[curImg]}`} />
+    </div>
   );
-}
+};
 
-export default Example;
+export default Carousel;

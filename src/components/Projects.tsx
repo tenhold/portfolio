@@ -1,17 +1,21 @@
 import React from 'react';
 import Project from './Project';
 import { projects } from '../../data/projectData';
-import { Grid } from '@material-ui/core';
 
 const Projects: React.FC = () => {
   return (
-    <div>
-      <h1>Projects</h1>
-      <ul>
-        {projects.map(({ name, description, images }) => (
-          <Project name={name} description={description} images={images} />
+    <div className='main'>
+      <div>
+        {projects.map(({ name, description, technologies, images, repo }) => (
+          <Project
+            name={name}
+            description={description}
+            technologies={technologies}
+            images={images}
+            repo={repo}
+          />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

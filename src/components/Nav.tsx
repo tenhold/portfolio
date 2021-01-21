@@ -2,15 +2,22 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Linkedin from '../svgs/Linkedin';
 import Github from '../svgs/Github';
-import '../App.css';
+import Hamburger from '../svgs/Hamburger';
+import Logo from '../svgs/Logo';
 
 const Nav: React.FC = () => {
+  const handleClick = () => {
+    console.log('hello from click');
+  };
+
   return (
     <nav>
-      <NavLink to='/' exact className='home-Link'>
-        <h1>Jon Tenholder</h1>
+      <NavLink to='/' exact className='home-link'>
+        {/* <h1>Jon Tenholder</h1> */}
+        <Logo className='logo' width='70' height='70' />
       </NavLink>
-      <ul className='nav-Links'>
+      <Hamburger className='hamburger' onClick={handleClick} />
+      <ul className='nav-links'>
         <li>
           <NavLink to='/about'>
             <h3>About</h3>
@@ -22,12 +29,24 @@ const Nav: React.FC = () => {
           </NavLink>
         </li>
         <li>
-          <a href='https://www.linkedin.com/in/jon-tenholder-583128191/'>
+          <NavLink to='/contact'>
+            <h3>Contact</h3>
+          </NavLink>
+        </li>
+        <li>
+          {/* {window.open('https://www.linkedin.com/in/jon-tenholder-583128191/')} */}
+          <a
+            href='https://www.linkedin.com/in/jon-tenholder-583128191/'
+            target='_blank'
+            rel='noreferrer noopener'>
             <Linkedin className='social' />
           </a>
         </li>
         <li>
-          <a href='https://github.com/tenhold'>
+          <a
+            href='https://github.com/tenhold'
+            target='_blank'
+            rel='noreferrer noopener'>
             <Github className='social' />
           </a>
         </li>

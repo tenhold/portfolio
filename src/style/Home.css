@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  padding: 10em 2em;
+}
+
+.me {
+  flex: 1;
+  border: 2px solid orangered;
+  padding: 3em 0;
+}
+
+.about {
+  display: inherit;
+  align-items: flex-end;
+  text-align: left;
+
+  padding: 0 2em;
+}
+
+.feat-projects {
+  display: flex;
+  padding: 1em;
+  bottom: 5em;
+  overflow: scroll;
+}
+
+.feat-projects::-webkit-scrollbar {
+  display: none;
+}
+
+.feat-project {
+  min-width: 300px;
+  max-width: 300px;
+  height: 200px;
+  max-height: 200px;
+  margin: 15px;
+}
+
+.feat-project:hover {
+  opacity: 50%;
+}
+
+.prost {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  /* .container {
+    display: block;
+    padding: 3em 2em;
+  } */
+
+  .about {
+    padding-top: 1em;
+  }
+}

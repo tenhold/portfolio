@@ -1,0 +1,24 @@
+import React from 'react';
+
+interface Btn {
+  className: string;
+  id: string;
+  onClick: () => void;
+}
+
+const PrevBtn: React.FC<Btn> = ({ className, id, onClick }) => {
+  return (
+    <svg
+      className={className}
+      id={id}
+      onClick={onClick}
+      xmlns='http://www.w3.org/2000/svg'
+      width='60'
+      height='60'
+      viewBox='0 0 24 24'>
+      <path d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' />
+    </svg>
+  );
+};
+
+export default PrevBtn;

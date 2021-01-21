@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface Props {
-  className: string;
-}
-
-const Github: React.FC<Props> = ({ className }) => {
+const Github: React.FC<{ className: string }> = ({ className }) => {
   return (
     <svg
       className={className}
