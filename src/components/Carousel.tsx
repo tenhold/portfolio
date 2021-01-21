@@ -1,4 +1,6 @@
 import React, { PropsWithChildren, useState } from 'react';
+import NextBtn from '../svgs/NextBtn';
+import PrevBtn from '../svgs/PrevBtn';
 
 interface Props {
   images: string[];
@@ -15,16 +17,15 @@ const Carousel: Function = ({
 
   return (
     <div className='carousel'>
+      <PrevBtn className='prev' id='arrows' onClick={prev} />
+      <NextBtn className='next' id='arrows' onClick={next} />
       <img src={images[curImg]} alt={`${images[curImg]}`} />
-      {/* {images.map((image: string, i: number) => (
-        <img src={image} alt={`${image}`} />
-      ))} */}
-      <button id='next' onClick={next}>
+      {/* <button id='next' onClick={next}>
         next
       </button>
       <button id='prev' onClick={prev}>
         previous
-      </button>
+      </button> */}
     </div>
   );
 };

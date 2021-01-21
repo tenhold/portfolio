@@ -37,20 +37,25 @@ h2 {
   display: block;
   width: 100%;
 }
-
+ 
 .images {
-  width: 100%;
   text-align: center;
 }
 
 .carousel {
   display: flex;
+  flex: 1 0 auto;
   flex-wrap: nowrap;
+}
+
+.carousel:hover > #arrows {
+  opacity: 100%;
+  transition: 0.3s;
 }
 
 .carousel img {
   width: 100%;
-  height: auto; 
+  height: calc(100% - 250px); 
 }
 
 .images button {
@@ -70,20 +75,23 @@ button:hover {
 
 }
 
-#next {
-  position: relative;
+#arrows {
+  opacity: 0;
+}
+
+.next {
+  position: absolute;
   margin: 0px;
   align-self: center;
-  left: -100%;
+  right: 5%;
   /* right: 30%; */
   /* bottom: 10%; */
 }
 
-#prev {
-  position: sticky;
+.prev {
+  position: absolute;
   margin: 0px;
   align-self: center;
-  right: 5%;
   /* left: 30%; */
   /* bottom: 220px;  */
 }
