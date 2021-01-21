@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, useState, useEffect } from 'react';
+import React, { PropsWithChildren, useState } from 'react';
 
 interface Props {
   images: string[];
@@ -9,17 +9,9 @@ const Carousel: Function = ({
 }: PropsWithChildren<Props>): JSX.Element => {
   const [curImg, setCurImg] = useState(0);
 
-  useEffect(() => {}, [curImg]);
+  const next = () => setCurImg(curImg === images.length - 1 ? 0 : curImg + 1);
 
-  const next = () => {
-    console.log('next');
-    setCurImg(curImg === images.length - 1 ? 0 : curImg + 1);
-  };
-
-  const prev = () => {
-    console.log('prev');
-    setCurImg(curImg === 0 ? images.length - 1 : curImg - 1);
-  };
+  const prev = () => setCurImg(curImg === 0 ? images.length - 1 : curImg - 1);
 
   return (
     <div className='carousel'>
@@ -27,8 +19,12 @@ const Carousel: Function = ({
       {/* {images.map((image: string, i: number) => (
         <img src={image} alt={`${image}`} />
       ))} */}
-      <button onClick={next}>next</button>
-      <button onClick={prev}>previous</button>
+      <button id='next' onClick={next}>
+        next
+      </button>
+      <button id='prev' onClick={prev}>
+        previous
+      </button>
     </div>
   );
 };

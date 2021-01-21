@@ -43,6 +43,11 @@ h2 {
   text-align: center;
 }
 
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .carousel img {
   width: 100%;
   height: auto; 
@@ -63,6 +68,24 @@ h2 {
 button:hover {
   background-color: #D3869B;
 
+}
+
+#next {
+  position: relative;
+  margin: 0px;
+  align-self: center;
+  left: -100%;
+  /* right: 30%; */
+  /* bottom: 10%; */
+}
+
+#prev {
+  position: sticky;
+  margin: 0px;
+  align-self: center;
+  right: 5%;
+  /* left: 30%; */
+  /* bottom: 220px;  */
 }
 
 

@@ -1,8 +1,7 @@
 import prostMock from '../images/projects/Prost/Prost_mock.png';
-import prostImg from '../images/prost.png';
-import prostImg0 from '../images/projects/Prost/IMG_3150.png';
-import prostImg1 from '../images/projects/Prost/IMG_3151.png';
-import prostImg2 from '../images/projects/Prost/IMG_3152.png';
+import prostHome from '../images/projects/Prost/Prost_home.png';
+import prostMap from '../images/projects/Prost/Prost_map.png';
+import prostMessage from '../images/projects/Prost/Prost_message.png';
 import trailrMockMac from '../images/projects/Trailr/trailr_macbook_mock.png';
 import trailrImg2 from '../images/projects/Trailr/trailr-2.png';
 
@@ -24,7 +23,7 @@ export const projects: projectsOS[] = [
     name: 'Prost',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
-    images: [prostMock, prostImg, prostImg0],
+    images: [prostMock, prostHome, prostMap, prostMessage],
     technologies: [
       'react',
       'react-router',
@@ -44,8 +43,7 @@ export const projects: projectsOS[] = [
   },
 ];
 
-export const prostImgs: image[] = [
+export const heroImgs: image[] = [
   { id: 3150, src: prostMock },
-  { id: 3151, src: prostImg1 },
-  { id: 3152, src: prostImg2 },
+  { id: 3151, src: trailrMockMac },
 ];
