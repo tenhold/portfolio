@@ -1,17 +1,18 @@
 import React from 'react';
+import Mail from '../svgs/Mail';
 
 const Contact = () => {
   return (
     <div className='main'>
       <div className='contact'>
         <h1>contact me</h1>
+        <h3>Drop me a line I want to hear from you.</h3>
         <a
           href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jtenhold@gmail.com'
           target='_blank'
           rel='noreferrer'>
-          email it
+          <Mail className='mail' />
         </a>
-        {/* <a href='mailto: jtenhold@gmail.com'>email me</a> */}
       </div>
     </div>
   );

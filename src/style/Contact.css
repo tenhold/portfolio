@@ -1,3 +1,10 @@
 .contact {
-  border: 10px solid #D3869B;
+  padding: 2em;
+  /* border: 10px solid #D3869B;
+  border-radius: 10px; */
+}
+
+.mail {
+  fill: #D3869B;
+  width: 100px;
 }
