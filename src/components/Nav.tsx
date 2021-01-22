@@ -20,17 +20,17 @@ const Nav: React.FC = () => {
       <ul className='nav-links'>
         <li>
           <NavLink to='/about'>
-            <h3>About</h3>
+            <h3>about</h3>
           </NavLink>
         </li>
         <li>
           <NavLink to='/projects'>
-            <h3>Projects</h3>
+            <h3>projects</h3>
           </NavLink>
         </li>
         <li>
           <NavLink to='/contact'>
-            <h3>Contact</h3>
+            <h3>contact</h3>
           </NavLink>
         </li>
         <li>

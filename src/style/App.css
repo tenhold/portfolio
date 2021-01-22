@@ -36,7 +36,7 @@ h4 {
 /* nav page */
 
 nav {
-  z-index: 2;
+  z-index: 3;
   padding-top: 0.5em;
   display: flex;
   position: fixed;
@@ -98,6 +98,7 @@ ul {
 
 
 .logo {
+  z-index: 2;
   transition: 0.3s;
 }
 
@@ -109,7 +110,8 @@ ul {
 /* Home page */
 
 .home {
-  display: block;
+  /* display: block; */
+  flex-direction: column;
   justify-content: center;
   padding: 12vh 20px 10vh 20px;
 }
@@ -126,8 +128,8 @@ ul {
     justify-content: space-evenly;
   }
 
-  nav a:visited {
-    color: #121212;
+  .nav-links a:hover {
+    color: rgb(228, 228, 228);
   }
 
   .hamburger {

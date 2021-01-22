@@ -4,6 +4,8 @@ import Mail from '../svgs/Mail';
 const Contact = () => {
   return (
     <div className='main'>
+      <div className='slash' id='slash-1'></div>
+      <div className='slash' id='slash-2'></div>
       <div className='contact'>
         <h1>contact me</h1>
         <h3>Drop me a line I want to hear from you.</h3>
