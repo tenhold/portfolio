@@ -3,11 +3,11 @@ import jon from '../../images/jon.jpg';
 
 const About = () => {
   return (
-    <div className='main'>
-      <div>
-        <img className='me' src={jon} alt='Jon' />
+    <div className='about-me'>
+      <div className='about-img'>
+        <img className='jon' src={jon} alt='Jon' />
       </div>
-      <div>
+      <div className='about-p'>
         <p>
           Software developer with experience in JavaScript. Accustomed to
           working in tight-knit crews where communication is key. As a

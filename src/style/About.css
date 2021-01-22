@@ -1,0 +1,28 @@
+.about-me {
+  display: flex;
+  flex-direction: row;
+  padding: 12vh 20px 10vh 20px;
+}
+
+.about-p {
+  flex: 1 1;
+  padding: 15px;
+  line-height: 1.5;
+}
+
+.about-img {
+  flex: 2 1;
+}
+
+.jon {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .about-me {
+    flex-direction: column;
+  }
+}
