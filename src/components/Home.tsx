@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { heroImgs } from '../../data/projectData';
 import Logo from '../svgs/Logo';
 
@@ -18,11 +18,11 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='feat-projects'>
-        {heroImgs.map(({ id, src }) => (
+        {heroImgs.map(({ id, name, src }) => (
           <div className='feat-project'>
-            <NavLink to='/projects'>
+            <HashLink to={`/projects#${name}`}>
               <img className='prost' src={src} alt={`prost${id}`} />
-            </NavLink>
+            </HashLink>
           </div>
         ))}
       </div>

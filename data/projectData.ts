@@ -3,7 +3,9 @@ import prostHome from '../images/projects/Prost/Prost_home.png';
 import prostMap from '../images/projects/Prost/Prost_map.png';
 import prostMessage from '../images/projects/Prost/Prost_message.png';
 import trailrMockMac from '../images/projects/Trailr/trailr_macbook_mock.png';
-import trailrImg2 from '../images/projects/Trailr/trailr-2.png';
+import trailr1 from '../images/projects/Trailr/trailr_home.png';
+import trailr2 from '../images/projects/Trailr/trailr_stargazer.png';
+import trailr3 from '../images/projects/Trailr/trailr_travellog.png';
 
 interface projectsOS {
   name: string;
@@ -15,6 +17,7 @@ interface projectsOS {
 
 interface image {
   id: number;
+  name: string;
   src: string;
 }
 
@@ -37,13 +40,13 @@ export const projects: projectsOS[] = [
     name: 'Trailr',
     description: `Trailr provides users access to hiking trails in their area, as well as search-by-location functionality. Trails load automatically as a user traverses to new areas within Google Maps.
     Users can save their favorite trails to plan trips, and rate the difficulty and likeability of each trail that they encounter. Users can also upload geo-tagged photos, sharing interesting things they find along the trail route with other users. Users can comment on their own photos and photos that others upload, and they can edit their own comments.`,
-    images: [trailrMockMac],
+    images: [trailrMockMac, trailr1, trailr2, trailr3],
     technologies: ['react', 'react-router', 'node.js', 'goolge maps API'],
     repo: 'https://github.com/tenhold/trailr',
   },
 ];
 
 export const heroImgs: image[] = [
-  { id: 3150, src: prostMock },
-  { id: 3151, src: trailrMockMac },
+  { id: 3150, name: 'Prost', src: prostMock },
+  { id: 3151, name: 'Trailr', src: trailrMockMac },
 ];

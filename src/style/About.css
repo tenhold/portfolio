@@ -5,8 +5,9 @@
 }
 
 .about-p {
-  flex: 1 1;
-  padding: 15px;
+  flex: 2 1;
+  padding-left: 15px;
+  padding-right: 15px;
   line-height: 1.5;
 }
 

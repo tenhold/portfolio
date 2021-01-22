@@ -16,7 +16,7 @@ const Project: React.FC<Props> = ({
   images,
   repo,
 }) => (
-  <div className='container'>
+  <div className='container' id={name}>
     <div className='column'>
       <h2>{name}</h2>
       <h4>Technologies used</h4>

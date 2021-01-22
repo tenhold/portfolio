@@ -53,6 +53,7 @@ h2 {
 }
 
 .carousel img {
+  border-radius: 10px;
   width: 100%;
   height: calc(100% - 250px); 
 }

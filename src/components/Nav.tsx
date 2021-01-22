@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Linkedin from '../svgs/Linkedin';
 import Github from '../svgs/Github';
-import Hamburger from '../svgs/Hamburger';
 import Logo from '../svgs/Logo';
 
 const Nav: React.FC = () => {
@@ -13,10 +12,8 @@ const Nav: React.FC = () => {
   return (
     <nav>
       <NavLink to='/' exact className='home-link'>
-        {/* <h1>Jon Tenholder</h1> */}
         <Logo className='logo' width='70' height='70' />
       </NavLink>
-      <Hamburger className='hamburger' onClick={handleClick} />
       <ul className='nav-links'>
         <li>
           <NavLink to='/about'>
@@ -34,7 +31,6 @@ const Nav: React.FC = () => {
           </NavLink>
         </li>
         <li>
-          {/* {window.open('https://www.linkedin.com/in/jon-tenholder-583128191/')} */}
           <a
             href='https://www.linkedin.com/in/jon-tenholder-583128191/'
             target='_blank'
