@@ -1,9 +1,9 @@
 import React from 'react';
 
 interface Props {
-  className: string;
-  width: string;
-  height: string;
+  className?: string;
+  width?: string;
+  height?: string;
 }
 
 const Logo: React.FC<Props> = ({ className, width, height }) => (
