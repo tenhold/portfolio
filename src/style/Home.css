@@ -1,9 +1,11 @@
 .about h3 {
   font-size: xx-large;
+  animation: fadein 3.5s;
 }
 
 .about h4 {
   font-size: large;
+  animation: fadein 2.5s;
 }
 
 .slash {
@@ -47,11 +49,12 @@
 
 .logo-home #JT {
   animation-name: fadein;
-  /* animation-delay: .5s; */
   animation-duration: 1.5s;
-
-  /* animation: scale 1s; */
 }
+/* 
+.logo-home:hover {
+  transform: skewY(-11deg); 
+} */
 
 @keyframes fadein {
   0% {
