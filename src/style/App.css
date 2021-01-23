@@ -17,6 +17,14 @@ div {
   color:rgb(228, 228, 228);
 }
 
+.error {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -37,7 +45,6 @@ h4 {
 
 nav {
   z-index: 3;
-  padding-top: 0.5em;
   display: flex;
   position: fixed;
   width: 100%;
@@ -125,7 +132,7 @@ ul {
     height: 8vh;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .nav-links a:hover {

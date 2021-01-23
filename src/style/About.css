@@ -1,23 +1,26 @@
 .about-me {
   display: flex;
-  flex-direction: row;
+
   padding: 12vh 20px 10vh 20px;
+  justify-content: space-between;
+}
+
+.about-me:last-child {
+  margin-left: auto;
 }
 
 .about-p {
-  flex: 2 1;
-  padding-left: 15px;
-  padding-right: 15px;
+  flex: 1;
+  margin-right: 10%;
+  padding: 2em;
   line-height: 1.5;
-}
-
-.about-img {
-  flex: 2 1;
+  justify-content: left;
+  align-self: center;
 }
 
 .jon {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   height: auto;
 }
 
@@ -25,5 +28,9 @@
 @media only screen and (max-width: 800px) {
   .about-me {
     flex-direction: column;
+  }
+  .about-p {
+    margin: auto;
+    padding: 0;
   }
 }

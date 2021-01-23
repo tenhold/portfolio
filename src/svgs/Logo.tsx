@@ -14,6 +14,7 @@ const Logo: React.FC<Props> = ({ className, width, height }) => (
     width={width}
     height={height}
     viewBox='0 150 1000 700'>
+    <title>Jon Tenholder logo</title>
     <image
       id='color-fill'
       data-name='Color Fill 2 copy'

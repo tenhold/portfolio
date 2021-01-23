@@ -8,8 +8,7 @@ const About = () => {
         <img className='jon' src={jon} alt='Jon' />
       </div>
       <div className='about-p'>
-        <div className='slash' id='slash1'></div>
-        <div className='slash' id='slash2'></div>
+        <h2>about me</h2>
         <p>
           Software developer with experience in JavaScript. Accustomed to
           working in tight-knit crews where communication is key. As a

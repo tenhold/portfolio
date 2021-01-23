@@ -19,7 +19,7 @@ const Home: React.FC = () => {
       </div>
       <div className='feat-projects'>
         {heroImgs.map(({ id, name, src }) => (
-          <div className='feat-project'>
+          <div className='feat-project' key={id}>
             <HashLink to={`/projects#${name}`}>
               <img className='prost' src={src} alt={`prost${id}`} />
             </HashLink>
