@@ -7,6 +7,10 @@ import trailr1 from '../images/projects/Trailr/trailr_home.png';
 import trailr2 from '../images/projects/Trailr/trailr_stargazer.png';
 import trailr3 from '../images/projects/Trailr/trailr_travellog.png';
 import myVoteMocMac from '../images/projects/MyVote/myvote_macbook_mock.png';
+import portfolioHome from '../images/projects/Portfolio/portfolio_home.png';
+import portfolioAbout from '../images/projects/Portfolio/portfolio_about.png';
+import portfolioProjects from '../images/projects/Portfolio/portfolio_projs.png';
+import portfolioContact from '../images/projects/Portfolio/portfolio_contact.png';
 
 interface projectsOS {
   name: string;
@@ -73,6 +77,19 @@ export const projects: projectsOS[] = [
       'Bootstrap',
     ],
     repo: 'https://github.com/tenhold/myvote',
+  },
+  {
+    name: 'Portfolio',
+    description:
+      'To create a dynamic website that worked both on mobile and on the web. Learn TypeScript. Create reuseable components. Do all the styling without a framework. Build out a image carousel. ',
+    images: [
+      portfolioHome,
+      portfolioAbout,
+      portfolioProjects,
+      portfolioContact,
+    ],
+    technologies: ['TypeScript', 'react', 'react-router', 'node.js', 'express'],
+    repo: 'https://github.com/tenhold/portfolio',
   },
 ];
 

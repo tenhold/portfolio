@@ -72,11 +72,11 @@ h2 {
 
 button:hover {
   background-color: #D3869B;
-
 }
 
 #arrows {
   opacity: 0;
+  fill: #7dd4b9;
 }
 
 .next {
