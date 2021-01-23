@@ -1,7 +1,6 @@
 .about-me {
   display: flex;
-
-  padding: 12vh 20px 10vh 20px;
+  padding: 12vh 0 10vh 0;
   justify-content: space-between;
 }
 
@@ -21,6 +20,10 @@
   align-self: center;
 }
 
+.about-img {
+  padding: 0 20px 0 20px;
+}
+
 .jon {
   width: 100%;
   max-width: 600px;
@@ -34,6 +37,6 @@
   }
   .about-p {
     margin: auto;
-    padding: 0;
+    padding: 0 20px 0 20px;
   }
 }
