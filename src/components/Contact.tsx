@@ -22,13 +22,28 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <Linkedin height='60' />
+            <a
+              href='https://www.linkedin.com/in/jon-tenholder-583128191/'
+              target='_blank'
+              rel='noreferrer'>
+              <Linkedin height='60' />
+            </a>
           </li>
           <li>
-            <Github width='60' height='60' />
+            <a
+              href='https://github.com/tenhold'
+              target='_blank'
+              rel='noreferrer'>
+              <Github width='60' height='60' />
+            </a>
           </li>
           <li>
-            <Instagram />
+            <a
+              href='https://www.instagram.com/thugcurse/'
+              target='_blank'
+              rel='noreferrer'>
+              <Instagram />
+            </a>
           </li>
         </ul>
       </div>

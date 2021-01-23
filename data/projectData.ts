@@ -7,6 +7,10 @@ import trailr1 from '../images/projects/Trailr/trailr_home.png';
 import trailr2 from '../images/projects/Trailr/trailr_stargazer.png';
 import trailr3 from '../images/projects/Trailr/trailr_travellog.png';
 import myVoteMocMac from '../images/projects/MyVote/myvote_macbook_mock.png';
+import portfolioHome from '../images/projects/Portfolio/portfolio_home.png';
+import portfolioAbout from '../images/projects/Portfolio/portfolio_about.png';
+import portfolioProjects from '../images/projects/Portfolio/portfolio_projs.png';
+import portfolioContact from '../images/projects/Portfolio/portfolio_contact.png';
 
 interface projectsOS {
   name: string;
@@ -26,7 +30,7 @@ export const projects: projectsOS[] = [
   {
     name: 'Prost',
     description:
-      'Prost aims to create safe drinking environments to promote both relaxing with friends and those who are yet to be called friends all while having a delicious drink. Users can go solo or create parties and place themselves on our map to be seen by the public or only their friends. Privacy is a big concern here and users have complete control over who they share their location with. Users can create a friends list, plan events through private messages, check their area for new spots to frequent or curate a list of their favorite watering holes, view the varying status of any of the participating bars and restaurants including population, indoor / outdoor, masks or no masks, etc. On the other hand, if you are a business owner, register with us and experience a new, fluid method of communication with your customers. Alert them to promotions, popup events, crowd numbers, and keep them up to date about the going-ons in your business.',
+      'Prost aims to create safe drinking environments. Users can go solo or create parties and place themselves on our map to be seen by the public or only their friends. Privacy is a big concern here and users have complete control over who they share their location with. Users can create a friends list, plan events through private messages, check their area for new spots to frequent or curate a list of their favorite watering holes, view the varying status of any of the participating bars and restaurants including population, indoor / outdoor, masks or no masks, etc. On the other hand, if you are a business owner, register with us and experience a new, fluid method of communication with your customers. Alert them to promotions, popup events, crowd numbers, and keep them up to date about the going-ons in your business.',
     images: [prostMock, prostHome, prostMap, prostMessage],
     technologies: [
       'react',
@@ -74,10 +78,24 @@ export const projects: projectsOS[] = [
     ],
     repo: 'https://github.com/tenhold/myvote',
   },
+  {
+    name: 'Portfolio',
+    description:
+      'To create a dynamic website that worked both on mobile and on the web. Learn TypeScript. Create reuseable components. Do all the styling without a framework. Build out a image carousel. ',
+    images: [
+      portfolioHome,
+      portfolioAbout,
+      portfolioProjects,
+      portfolioContact,
+    ],
+    technologies: ['TypeScript', 'react', 'react-router', 'node.js', 'express'],
+    repo: 'https://github.com/tenhold/portfolio',
+  },
 ];
 
 export const heroImgs: image[] = [
   { id: 3150, name: 'Prost', src: prostMock },
   { id: 3151, name: 'Trailr', src: trailrMockMac },
   { id: 3152, name: 'MyVote', src: myVoteMocMac },
+  { id: 3153, name: 'Portfolio', src: portfolioHome },
 ];

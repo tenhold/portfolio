@@ -1,7 +1,6 @@
 .about-me {
   display: flex;
-
-  padding: 12vh 20px 10vh 20px;
+  padding: 12vh 0 10vh 0;
   justify-content: space-between;
 }
 
@@ -9,6 +8,9 @@
   margin-left: auto;
 }
 
+.about-p h3 {
+  padding-bottom: .5em;
+}
 .about-p {
   flex: 1;
   margin-right: 10%;
@@ -16,6 +18,10 @@
   line-height: 1.5;
   justify-content: left;
   align-self: center;
+}
+
+.about-img {
+  padding: 0 20px 0 20px;
 }
 
 .jon {
@@ -31,6 +37,6 @@
   }
   .about-p {
     margin: auto;
-    padding: 0;
+    padding: 0 20px 0 20px;
   }
 }
