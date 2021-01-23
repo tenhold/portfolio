@@ -1,41 +1,45 @@
 .about h3 {
-  font-size: xx-large;
-  animation: fadein 3.5s;
+  color: #D3869B;
+  font-size: 200%;
+  animation: fadein 2.5s;
 }
 
 .about h4 {
-  font-size: large;
-  animation: fadein 2.5s;
+  font-size: 150%;
+  animation: fadein 3.5s;
 }
 
 .slash {
   position: fixed;
   width: -webkit-fill-available;
-  height: 20vh;
-  /* top: -30px; */
+  top: -30px;
   z-index: -1;
 }
 
 #slash-1 {
-  background: #442b32;
+  background: #321f25;
   transform: skewY(11deg);
+  height: 20vh;
 }
 
 #slash-2 {
-  background: #2f5247;
-  top: 30%;
+  background: #1d342c;
+  top: 16%;
   transform: skewY(11deg);
+  height: 60vh;
 }
 
 #slash-3 {
-  background: #2f5247;
-  top: 30%;
+  background: #1d342c;
+  top: 16%;
   transform: skewY(-11deg); 
+  height: 60vh;
 }
 
 #slash-4 {
-  background: #442b32;
+  background: #321f25;
   transform: skewY(-11deg); 
+  height: 60vh
 }
 
 .logo-home {
