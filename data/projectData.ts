@@ -6,11 +6,12 @@ import trailrMockMac from '../images/projects/Trailr/trailr_macbook_mock.png';
 import trailr1 from '../images/projects/Trailr/trailr_home.png';
 import trailr2 from '../images/projects/Trailr/trailr_stargazer.png';
 import trailr3 from '../images/projects/Trailr/trailr_travellog.png';
+import myVoteMocMac from '../images/projects/MyVote/myvote_macbook_mock.png';
 
 interface projectsOS {
   name: string;
   description: string;
-  images: string[]; // will be an array
+  images: string[];
   technologies: string[];
   repo: string;
 }
@@ -31,8 +32,14 @@ export const projects: projectsOS[] = [
       'react',
       'react-router',
       'node.js',
+      'express',
+      'socket.io',
       'goolge maps API',
       'Material UI',
+      'PostgreSql',
+      'Google Maps',
+      'Google Translate',
+      'Webpack',
     ],
     repo: 'https://github.com/tenhold/Prost',
   },
@@ -41,12 +48,36 @@ export const projects: projectsOS[] = [
     description: `Trailr provides users access to hiking trails in their area, as well as search-by-location functionality. Trails load automatically as a user traverses to new areas within Google Maps.
     Users can save their favorite trails to plan trips, and rate the difficulty and likeability of each trail that they encounter. Users can also upload geo-tagged photos, sharing interesting things they find along the trail route with other users. Users can comment on their own photos and photos that others upload, and they can edit their own comments.`,
     images: [trailrMockMac, trailr1, trailr2, trailr3],
-    technologies: ['react', 'react-router', 'node.js', 'goolge maps API'],
+    technologies: [
+      'react',
+      'react-router',
+      'node.js',
+      'express',
+      'MySQL',
+      'Bootstrap',
+      'goolge maps API',
+      'Babel',
+    ],
     repo: 'https://github.com/tenhold/trailr',
+  },
+  {
+    name: 'MyVote',
+    description: '',
+    images: [myVoteMocMac],
+    technologies: [
+      'react',
+      'react-router',
+      'node.js',
+      'express',
+      'MongoDB',
+      'Bootstrap',
+    ],
+    repo: 'https://github.com/tenhold/myvote',
   },
 ];
 
 export const heroImgs: image[] = [
   { id: 3150, name: 'Prost', src: prostMock },
   { id: 3151, name: 'Trailr', src: trailrMockMac },
+  { id: 3152, name: 'MyVote', src: myVoteMocMac },
 ];
