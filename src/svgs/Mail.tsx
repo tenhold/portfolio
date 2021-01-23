@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Mail: React.FC<{ className: string }> = ({ className }) => {
+const Mail: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
       className={className}
@@ -8,7 +8,8 @@ const Mail: React.FC<{ className: string }> = ({ className }) => {
       width='60'
       height='60'
       viewBox='0 0 24 24'>
-      <path d='M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z' />
+      <title>email</title>
+      <path d='M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z' />
     </svg>
   );
 };
