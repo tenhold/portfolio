@@ -10,6 +10,7 @@ const Projects: React.FC = () => {
       <div>
         {projects.map(({ name, description, technologies, images, repo }) => (
           <Project
+            key={name}
             name={name}
             description={description}
             technologies={technologies}

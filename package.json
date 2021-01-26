@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "dev": "webpack --mode development --watch",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.js",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts,.jsx,.tsx"
   },
   "keywords": [
