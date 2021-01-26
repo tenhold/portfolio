@@ -23,8 +23,8 @@ const Project: React.FC<Props> = ({
       <p>{description}</p>
       <h4>Technologies used</h4>
       <ul>
-        {technologies.map((technology) => (
-          <li>{technology}</li>
+        {technologies.map((technology, i) => (
+          <li key={i}>{technology}</li>
         ))}
       </ul>
     </div>
