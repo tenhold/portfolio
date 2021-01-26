@@ -19,14 +19,14 @@ const Project: React.FC<Props> = ({
   <div className='container' id={name}>
     <div className='column'>
       <h2>{name}</h2>
+      <h4>Description</h4>
+      <p>{description}</p>
       <h4>Technologies used</h4>
       <ul>
         {technologies.map((technology) => (
           <li>{technology}</li>
         ))}
       </ul>
-      <h4>Description</h4>
-      <p>{description}</p>
     </div>
     <div className='images'>
       <Carousel images={images} />

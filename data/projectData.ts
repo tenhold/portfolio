@@ -45,7 +45,7 @@ export const projects: projectsOS[] = [
       'Google Translate',
       'Webpack',
     ],
-    repo: 'https://github.com/tenhold/Prost',
+    repo: 'https://github.com/CodingUnderTheInfluence/Prost',
   },
   {
     name: 'Trailr',
@@ -62,11 +62,12 @@ export const projects: projectsOS[] = [
       'goolge maps API',
       'Babel',
     ],
-    repo: 'https://github.com/tenhold/trailr',
+    repo: 'https://github.com/hanging-chads/trailr',
   },
   {
     name: 'MyVote',
-    description: '',
+    description:
+      "Created during one of America's most important election cycles, MyVote aims to make gathering information on voting as easy and simple as possible. MyVote employs a public voter information query API to collect and display information on the election and voting process.",
     images: [myVoteMocMac],
     technologies: [
       'react',
@@ -76,19 +77,28 @@ export const projects: projectsOS[] = [
       'MongoDB',
       'Bootstrap',
     ],
-    repo: 'https://github.com/tenhold/myvote',
+    repo: 'https://github.com/hanging-chads/myvote',
   },
   {
     name: 'Portfolio',
     description:
-      'To create a dynamic website that worked both on mobile and on the web. Learn TypeScript. Create reuseable components. Do all the styling without a framework. Build out a image carousel. ',
+      'To create a serverless dynamic website that worked both on mobile and on the web. Create a CICD with AWS CodePipeline that pushes to an S3 bucket. Learn TypeScript. Create reuseable components. Do all the styling without a framework. Build out a image carousel. ',
     images: [
       portfolioHome,
       portfolioAbout,
       portfolioProjects,
       portfolioContact,
     ],
-    technologies: ['TypeScript', 'react', 'react-router', 'node.js', 'express'],
+    technologies: [
+      'TypeScript',
+      'react',
+      'react-router',
+      'S3',
+      'CodePipeline',
+      'serverless',
+      'node.js',
+      'express',
+    ],
     repo: 'https://github.com/tenhold/portfolio',
   },
 ];
